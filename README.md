@@ -4,6 +4,11 @@ Terraform setup to validate the private connection between an Azure VM and a Blo
 virtual network, subnet, and storage account with a service endpoint, disables public access, and tests connectivity
 using CURL and nslookup.
 
+## Validation
+
+- nslookup storageacctsvcendpt.blob.core.windows.net
+- Nslookup output ![Alt](./images/nslookup.png)
+
 ## Terraform Init
 
 - Create and configure Azure Storage Account for Terraform state
